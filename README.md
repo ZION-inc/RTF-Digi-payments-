@@ -158,20 +158,20 @@ http://localhost:5000
 ### Python API
 
 ```python
-from src.fraud_engine import FraudDetectionEngine
-from src.models.transaction import Transaction
+from rtf_digi_payments.fraud_engine import FraudDetectionEngine
+from rtf_digi_payments.models.transaction import Transaction
 from datetime import datetime
 
 engine = FraudDetectionEngine()
 
 transaction = Transaction(
-    transaction_id="TXN001",
-    sender_id="USER001",
-    receiver_id="USER002",
-    amount=5000.0,
-    timestamp=datetime.now(),
-    device_id="DEVICE001",
-    ip_address="192.168.1.1"
+  transaction_id="TXN001",
+  sender_id="USER001",
+  receiver_id="USER002",
+  amount=5000.0,
+  timestamp=datetime.now(),
+  device_id="DEVICE001",
+  ip_address="192.168.1.1"
 )
 
 result = engine.analyze_transaction(transaction)

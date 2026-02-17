@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
-from src.fraud_engine import FraudDetectionEngine
-from src.models.transaction import Transaction, FraudScore
+from .fraud_engine import FraudDetectionEngine
+from .models.transaction import Transaction, FraudScore
 import uvicorn
 
 app = FastAPI(title="Real-Time Fraud Detection API")

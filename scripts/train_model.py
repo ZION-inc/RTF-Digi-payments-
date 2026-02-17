@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, roc_auc_score, confusion_matrix
-from src.ml_scorer import MLFraudScorer
-from src.data_generator import generate_training_data
+from rtf_digi_payments.ml_scorer import MLFraudScorer
+from rtf_digi_payments.data_generator import generate_training_data
 import os
 
 def train_model():

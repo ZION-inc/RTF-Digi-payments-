@@ -1,8 +1,7 @@
 import networkx as nx
 from collections import defaultdict
 from datetime import datetime, timedelta
-from typing import Dict, Set, Tuple
-import numpy as np
+from typing import Tuple, Set
 
 class GraphFraudDetector:
     def __init__(self, window_hours: int = 24, min_ring_size: int = 3):

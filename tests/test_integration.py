@@ -1,8 +1,8 @@
 import pytest
 import requests
 from datetime import datetime
-from src.models.transaction import Transaction, BiometricData
-from src.fraud_engine import FraudDetectionEngine
+from rtf_digi_payments.models.transaction import Transaction, BiometricData
+from rtf_digi_payments.fraud_engine import FraudDetectionEngine
 
 class TestIntegration:
     @pytest.fixture

@@ -1,7 +1,5 @@
 import matplotlib.pyplot as plt
 import networkx as nx
-import numpy as np
-from collections import Counter
 
 class FraudVisualizer:
     @staticmethod
@@ -38,6 +36,9 @@ class FraudVisualizer:
     
     @staticmethod
     def plot_fraud_scores(results, output_path='fraud_scores.png'):
+        import numpy as np
+        import matplotlib.pyplot as plt
+
         fig, axes = plt.subplots(2, 2, figsize=(12, 10))
         
         fraud_probs = [r.fraud_probability for r in results]

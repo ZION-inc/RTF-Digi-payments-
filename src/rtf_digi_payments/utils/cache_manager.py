@@ -1,7 +1,7 @@
 import redis
 import json
-from typing import Dict, Optional
-from datetime import datetime, timedelta
+from typing import Dict
+from datetime import datetime
 
 class CacheManager:
     def __init__(self, host: str = 'localhost', port: int = 6379, ttl: int = 3600):

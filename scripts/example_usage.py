@@ -2,8 +2,8 @@ import os, sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from datetime import datetime
-from src.fraud_engine import FraudDetectionEngine
-from src.models.transaction import Transaction, BiometricData
+from rtf_digi_payments.fraud_engine import FraudDetectionEngine
+from rtf_digi_payments.models.transaction import Transaction, BiometricData
 
 def main():
     engine = FraudDetectionEngine()

@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
-from datetime import datetime, timedelta
-import random
+from datetime import datetime
 
 def generate_training_data(n_samples=10000, fraud_ratio=0.02):
     np.random.seed(42)
